@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include "utils.h"
 
 int main(int argc, char *argv[]) {
 	if (argc < 2) {
@@ -15,7 +16,7 @@ int main(int argc, char *argv[]) {
 	choice[strcspn(choice, "\n")] = 0;
 
 	if (strcmp(choice, "Y") == 0 || strcmp(choice, "y") == 0) {
-		junk(argv[1]);
+		create_junk(argv[1]);
 	} else if (strcmp(choice, "N") == 0 || strcmp(choice, "n") == 0) {
 		printf("File corruption aborted\n");
 	} else {
