@@ -2,6 +2,8 @@
 #include <string.h>
 #include "utils.h"
 
+extern void create_junk(const char *file);
+
 int main(int argc, char *argv[]) {
 	if (argc < 2) {
 		printf("Provide a file name\n");
