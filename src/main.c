@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-#include "utils.h"
 
 extern void create_junk(const char *file);
 
